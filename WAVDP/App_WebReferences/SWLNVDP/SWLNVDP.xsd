@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:52747/SWLNVDP.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
+  <xs:element name="Insertar_VProducto_I">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CodigoProducto" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NombreProducto" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DescripcionProducto" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PrecioUnitarioProducto" type="xs:decimal" />
+        <xs:element minOccurs="0" name="StockProducto" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Insertar_VProducto_IResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_VProducto_O_Todo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_VProducto_O_TodoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="Obtener_VProducto_O_TodoResult" nillable="true" type="q1:ArrayOfEVProducto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_VProducto_O_CodigoProducto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CodigoProducto" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_VProducto_O_CodigoProductoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="Obtener_VProducto_O_CodigoProductoResult" nillable="true" type="q2:EVProducto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_VProducto_O_NombreProducto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="NombreProducto" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_VProducto_O_NombreProductoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="Obtener_VProducto_O_NombreProductoResult" nillable="true" type="q3:ArrayOfEVProducto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Actualizar_VProducto_A">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CodigoProducto" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NombreProducto" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DescripcionProducto" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PrecioUnitarioProducto" type="xs:decimal" />
+        <xs:element minOccurs="0" name="StockProducto" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Actualizar_VProducto_AResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Eliminar_VProducto_E">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CodigoProducto" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Eliminar_VProducto_EResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Insertar_VCliente_I">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CodigoCliente" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NombreCliente" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ApellidoPaternoCliente" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ApellidoMaternoCliente" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DireccionCliente" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TelefonoCliente" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Insertar_VCliente_IResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_VCliente_O_Todo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_VCliente_O_TodoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="Obtener_VCliente_O_TodoResult" nillable="true" type="q4:ArrayOfEVCliente" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_VCliente_O_CodigoCliente">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CodigoCliente" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_VCliente_O_CodigoClienteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="Obtener_VCliente_O_CodigoClienteResult" nillable="true" type="q5:EVCliente" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_VCliente_O_ApellidoPaternoCliente">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ApellidoPaternoCliente" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_VCliente_O_ApellidoPaternoClienteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="Obtener_VCliente_O_ApellidoPaternoClienteResult" nillable="true" type="q6:ArrayOfEVCliente" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Actualizar_VCliente_A">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CodigoCliente" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NombreCliente" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ApellidoPaternoCliente" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ApellidoMaternoCliente" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DireccionCliente" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TelefonoCliente" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Actualizar_VCliente_AResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Insertar_VEmpleado_I">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CodigoEmpleado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NombreEmpleado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ApellidoPaternoEmpleado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ApellidoMaternoEmpleado" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Insertar_VEmpleado_IResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_VEmpleado_O_Todo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_VEmpleado_O_TodoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="Obtener_VEmpleado_O_TodoResult" nillable="true" type="q7:ArrayOfEVEmpleado" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_VEmpleado_O_CodigoEmpleado">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CodigoEmpleado" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_VEmpleado_O_CodigoEmpleadoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="Obtener_VEmpleado_O_CodigoEmpleadoResult" nillable="true" type="q8:EVEmpleado" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_VEmpleado_O_ApellidoPaternoEmpleado">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ApellidoPaternoEmpleado" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_VEmpleado_O_ApellidoPaternoEmpleadoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="Obtener_VEmpleado_O_ApellidoPaternoEmpleadoResult" nillable="true" type="q9:ArrayOfEVEmpleado" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Actualizar_VEmpleado_A">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CodigoEmpleado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NombreEmpleado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ApellidoPaternoEmpleado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ApellidoMaternoEmpleado" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Actualizar_VEmpleado_AResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Eliminar_VEmpleado_E">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CodigoEmpleado" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Eliminar_VEmpleado_EResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Insertar_VVenta_I">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CodigoVenta" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MetodoPagoVenta" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TipoEntregaVenta" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CantidadProductoVenta" type="xs:int" />
+        <xs:element minOccurs="0" name="PrecioTotalVenta" type="xs:decimal" />
+        <xs:element minOccurs="0" name="CodigoCliente" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CodigoProducto" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CodigoEmpleado" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Insertar_VVenta_IResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_VVenta_O_Todo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_VVenta_O_TodoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="Obtener_VVenta_O_TodoResult" nillable="true" type="q10:ArrayOfEVVenta" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_VVenta_O_CodigoVenta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CodigoVenta" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_VVenta_O_CodigoVentaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="Obtener_VVenta_O_CodigoVentaResult" nillable="true" type="q11:EVVenta" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Eliminar_VVenta_E">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CodigoVenta" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Eliminar_VVenta_EResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_VVenta_O_Compleja">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_VVenta_O_ComplejaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="Obtener_VVenta_O_ComplejaResult" nillable="true" type="q12:ArrayOfEVVentaCompleja" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_VVenta_O_Compleja_CodigoCliente">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CodigoCliente" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_VVenta_O_Compleja_CodigoClienteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="Obtener_VVenta_O_Compleja_CodigoClienteResult" nillable="true" type="q13:ArrayOfEVVentaCompleja" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_VVenta_O_Compleja_CodigoEmpleado">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CodigoEmpleado" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_VVenta_O_Compleja_CodigoEmpleadoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="Obtener_VVenta_O_Compleja_CodigoEmpleadoResult" nillable="true" type="q14:ArrayOfEVVentaCompleja" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_VVenta_O_Compleja_CodigoProducto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CodigoProducto" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Obtener_VVenta_O_Compleja_CodigoProductoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="Obtener_VVenta_O_Compleja_CodigoProductoResult" nillable="true" type="q15:ArrayOfEVVentaCompleja" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

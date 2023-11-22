@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="5f3c861a-5768-42ed-96f3-58d36f18ffa7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:52747/SWLNVDP.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SWLNVDP.xsd" MetadataType="Schema" ID="e52d59cf-8b4d-464c-9584-2ec256068e90" SourceId="1" SourceUrl="http://localhost:52747/SWLNVDP.svc?xsd=xsd0" />
+    <MetadataFile FileName="SWLNVDP1.xsd" MetadataType="Schema" ID="0c684b51-bf11-4740-8a2b-28b04619c807" SourceId="1" SourceUrl="http://localhost:52747/SWLNVDP.svc?xsd=xsd1" />
+    <MetadataFile FileName="SWLNVDP.wsdl" MetadataType="Wsdl" ID="26525cc3-9d60-4c54-9f61-c08b1834d8fb" SourceId="1" SourceUrl="http://localhost:52747/SWLNVDP.svc?wsdl" />
+    <MetadataFile FileName="SWLNVDP.disco" MetadataType="Disco" ID="a3c3b7e1-7769-4630-99e1-7a350ab55388" SourceId="1" SourceUrl="http://localhost:52747/SWLNVDP.svc?disco" />
+    <MetadataFile FileName="SWLNVDP2.xsd" MetadataType="Schema" ID="25ef1163-1118-49cc-89a2-f17c4d8d64e1" SourceId="1" SourceUrl="http://localhost:52747/SWLNVDP.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

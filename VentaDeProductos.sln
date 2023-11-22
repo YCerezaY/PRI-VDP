@@ -1,0 +1,96 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SWLNVDP", "SWLNVDP\", "{A0794863-DC43-410B-B8A7-3C079928EEC3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{82BF257D-AF19-455C-AA10-0F35F6A6A54E} = {82BF257D-AF19-455C-AA10-0F35F6A6A54E}
+	EndProjectSection
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_52747"
+		Debug.AspNetCompiler.PhysicalPath = "SWLNVDP\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52747\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_52747"
+		Release.AspNetCompiler.PhysicalPath = "SWLNVDP\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52747\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "52747"
+		SlnRelativePath = "SWLNVDP\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SWADNETVDP", "SWADNETVDP\", "{82BF257D-AF19-455C-AA10-0F35F6A6A54E}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_52749"
+		Debug.AspNetCompiler.PhysicalPath = "SWADNETVDP\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52749\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_52749"
+		Release.AspNetCompiler.PhysicalPath = "SWADNETVDP\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52749\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "52749"
+		SlnRelativePath = "SWADNETVDP\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WAVDP", "WAVDP\", "{EC5723DF-36F3-4429-B5E8-6273F700053E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A0794863-DC43-410B-B8A7-3C079928EEC3} = {A0794863-DC43-410B-B8A7-3C079928EEC3}
+	EndProjectSection
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_51240"
+		Debug.AspNetCompiler.PhysicalPath = "WAVDP\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51240\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_51240"
+		Release.AspNetCompiler.PhysicalPath = "WAVDP\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51240\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "51240"
+		SlnRelativePath = "WAVDP\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0794863-DC43-410B-B8A7-3C079928EEC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0794863-DC43-410B-B8A7-3C079928EEC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82BF257D-AF19-455C-AA10-0F35F6A6A54E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82BF257D-AF19-455C-AA10-0F35F6A6A54E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC5723DF-36F3-4429-B5E8-6273F700053E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC5723DF-36F3-4429-B5E8-6273F700053E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CE74835D-BBC0-404A-ACB7-A1BAE3EA20AE}
+	EndGlobalSection
+EndGlobal

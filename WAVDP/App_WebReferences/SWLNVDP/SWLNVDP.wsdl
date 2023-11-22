@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="SWLNVDP" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:52747/SWLNVDP.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:52747/SWLNVDP.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:52747/SWLNVDP.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISWLNVDP_Insertar_VProducto_I_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insertar_VProducto_I" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Insertar_VProducto_I_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insertar_VProducto_IResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Obtener_VProducto_O_Todo_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_VProducto_O_Todo" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Obtener_VProducto_O_Todo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_VProducto_O_TodoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Obtener_VProducto_O_CodigoProducto_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_VProducto_O_CodigoProducto" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Obtener_VProducto_O_CodigoProducto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_VProducto_O_CodigoProductoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Obtener_VProducto_O_NombreProducto_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_VProducto_O_NombreProducto" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Obtener_VProducto_O_NombreProducto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_VProducto_O_NombreProductoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Actualizar_VProducto_A_InputMessage">
+    <wsdl:part name="parameters" element="tns:Actualizar_VProducto_A" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Actualizar_VProducto_A_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Actualizar_VProducto_AResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Eliminar_VProducto_E_InputMessage">
+    <wsdl:part name="parameters" element="tns:Eliminar_VProducto_E" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Eliminar_VProducto_E_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Eliminar_VProducto_EResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Insertar_VCliente_I_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insertar_VCliente_I" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Insertar_VCliente_I_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insertar_VCliente_IResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Obtener_VCliente_O_Todo_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_VCliente_O_Todo" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Obtener_VCliente_O_Todo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_VCliente_O_TodoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Obtener_VCliente_O_CodigoCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_VCliente_O_CodigoCliente" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Obtener_VCliente_O_CodigoCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_VCliente_O_CodigoClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Obtener_VCliente_O_ApellidoPaternoCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_VCliente_O_ApellidoPaternoCliente" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Obtener_VCliente_O_ApellidoPaternoCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_VCliente_O_ApellidoPaternoClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Actualizar_VCliente_A_InputMessage">
+    <wsdl:part name="parameters" element="tns:Actualizar_VCliente_A" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Actualizar_VCliente_A_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Actualizar_VCliente_AResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Insertar_VEmpleado_I_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insertar_VEmpleado_I" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Insertar_VEmpleado_I_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insertar_VEmpleado_IResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Obtener_VEmpleado_O_Todo_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_VEmpleado_O_Todo" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Obtener_VEmpleado_O_Todo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_VEmpleado_O_TodoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Obtener_VEmpleado_O_CodigoEmpleado_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_VEmpleado_O_CodigoEmpleado" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Obtener_VEmpleado_O_CodigoEmpleado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_VEmpleado_O_CodigoEmpleadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Obtener_VEmpleado_O_ApellidoPaternoEmpleado_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_VEmpleado_O_ApellidoPaternoEmpleado" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Obtener_VEmpleado_O_ApellidoPaternoEmpleado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_VEmpleado_O_ApellidoPaternoEmpleadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Actualizar_VEmpleado_A_InputMessage">
+    <wsdl:part name="parameters" element="tns:Actualizar_VEmpleado_A" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Actualizar_VEmpleado_A_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Actualizar_VEmpleado_AResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Eliminar_VEmpleado_E_InputMessage">
+    <wsdl:part name="parameters" element="tns:Eliminar_VEmpleado_E" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Eliminar_VEmpleado_E_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Eliminar_VEmpleado_EResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Insertar_VVenta_I_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insertar_VVenta_I" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Insertar_VVenta_I_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insertar_VVenta_IResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Obtener_VVenta_O_Todo_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_VVenta_O_Todo" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Obtener_VVenta_O_Todo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_VVenta_O_TodoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Obtener_VVenta_O_CodigoVenta_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_VVenta_O_CodigoVenta" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Obtener_VVenta_O_CodigoVenta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_VVenta_O_CodigoVentaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Eliminar_VVenta_E_InputMessage">
+    <wsdl:part name="parameters" element="tns:Eliminar_VVenta_E" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Eliminar_VVenta_E_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Eliminar_VVenta_EResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Obtener_VVenta_O_Compleja_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_VVenta_O_Compleja" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Obtener_VVenta_O_Compleja_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_VVenta_O_ComplejaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Obtener_VVenta_O_Compleja_CodigoCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_VVenta_O_Compleja_CodigoCliente" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Obtener_VVenta_O_Compleja_CodigoCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_VVenta_O_Compleja_CodigoClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Obtener_VVenta_O_Compleja_CodigoEmpleado_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_VVenta_O_Compleja_CodigoEmpleado" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Obtener_VVenta_O_Compleja_CodigoEmpleado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_VVenta_O_Compleja_CodigoEmpleadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Obtener_VVenta_O_Compleja_CodigoProducto_InputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_VVenta_O_Compleja_CodigoProducto" />
+  </wsdl:message>
+  <wsdl:message name="ISWLNVDP_Obtener_VVenta_O_Compleja_CodigoProducto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Obtener_VVenta_O_Compleja_CodigoProductoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISWLNVDP">
+    <wsdl:operation name="Insertar_VProducto_I">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNVDP/Insertar_VProducto_I" message="tns:ISWLNVDP_Insertar_VProducto_I_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNVDP/Insertar_VProducto_IResponse" message="tns:ISWLNVDP_Insertar_VProducto_I_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_VProducto_O_Todo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNVDP/Obtener_VProducto_O_Todo" message="tns:ISWLNVDP_Obtener_VProducto_O_Todo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNVDP/Obtener_VProducto_O_TodoResponse" message="tns:ISWLNVDP_Obtener_VProducto_O_Todo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_VProducto_O_CodigoProducto">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNVDP/Obtener_VProducto_O_CodigoProducto" message="tns:ISWLNVDP_Obtener_VProducto_O_CodigoProducto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNVDP/Obtener_VProducto_O_CodigoProductoResponse" message="tns:ISWLNVDP_Obtener_VProducto_O_CodigoProducto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_VProducto_O_NombreProducto">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNVDP/Obtener_VProducto_O_NombreProducto" message="tns:ISWLNVDP_Obtener_VProducto_O_NombreProducto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNVDP/Obtener_VProducto_O_NombreProductoResponse" message="tns:ISWLNVDP_Obtener_VProducto_O_NombreProducto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_VProducto_A">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNVDP/Actualizar_VProducto_A" message="tns:ISWLNVDP_Actualizar_VProducto_A_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNVDP/Actualizar_VProducto_AResponse" message="tns:ISWLNVDP_Actualizar_VProducto_A_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Eliminar_VProducto_E">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNVDP/Eliminar_VProducto_E" message="tns:ISWLNVDP_Eliminar_VProducto_E_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNVDP/Eliminar_VProducto_EResponse" message="tns:ISWLNVDP_Eliminar_VProducto_E_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insertar_VCliente_I">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNVDP/Insertar_VCliente_I" message="tns:ISWLNVDP_Insertar_VCliente_I_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNVDP/Insertar_VCliente_IResponse" message="tns:ISWLNVDP_Insertar_VCliente_I_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_VCliente_O_Todo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNVDP/Obtener_VCliente_O_Todo" message="tns:ISWLNVDP_Obtener_VCliente_O_Todo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNVDP/Obtener_VCliente_O_TodoResponse" message="tns:ISWLNVDP_Obtener_VCliente_O_Todo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_VCliente_O_CodigoCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNVDP/Obtener_VCliente_O_CodigoCliente" message="tns:ISWLNVDP_Obtener_VCliente_O_CodigoCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNVDP/Obtener_VCliente_O_CodigoClienteResponse" message="tns:ISWLNVDP_Obtener_VCliente_O_CodigoCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_VCliente_O_ApellidoPaternoCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNVDP/Obtener_VCliente_O_ApellidoPaternoCliente" message="tns:ISWLNVDP_Obtener_VCliente_O_ApellidoPaternoCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNVDP/Obtener_VCliente_O_ApellidoPaternoClienteResponse" message="tns:ISWLNVDP_Obtener_VCliente_O_ApellidoPaternoCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_VCliente_A">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNVDP/Actualizar_VCliente_A" message="tns:ISWLNVDP_Actualizar_VCliente_A_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNVDP/Actualizar_VCliente_AResponse" message="tns:ISWLNVDP_Actualizar_VCliente_A_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insertar_VEmpleado_I">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNVDP/Insertar_VEmpleado_I" message="tns:ISWLNVDP_Insertar_VEmpleado_I_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNVDP/Insertar_VEmpleado_IResponse" message="tns:ISWLNVDP_Insertar_VEmpleado_I_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_VEmpleado_O_Todo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNVDP/Obtener_VEmpleado_O_Todo" message="tns:ISWLNVDP_Obtener_VEmpleado_O_Todo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNVDP/Obtener_VEmpleado_O_TodoResponse" message="tns:ISWLNVDP_Obtener_VEmpleado_O_Todo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_VEmpleado_O_CodigoEmpleado">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNVDP/Obtener_VEmpleado_O_CodigoEmpleado" message="tns:ISWLNVDP_Obtener_VEmpleado_O_CodigoEmpleado_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNVDP/Obtener_VEmpleado_O_CodigoEmpleadoResponse" message="tns:ISWLNVDP_Obtener_VEmpleado_O_CodigoEmpleado_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_VEmpleado_O_ApellidoPaternoEmpleado">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNVDP/Obtener_VEmpleado_O_ApellidoPaternoEmpleado" message="tns:ISWLNVDP_Obtener_VEmpleado_O_ApellidoPaternoEmpleado_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNVDP/Obtener_VEmpleado_O_ApellidoPaternoEmpleadoResponse" message="tns:ISWLNVDP_Obtener_VEmpleado_O_ApellidoPaternoEmpleado_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_VEmpleado_A">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNVDP/Actualizar_VEmpleado_A" message="tns:ISWLNVDP_Actualizar_VEmpleado_A_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNVDP/Actualizar_VEmpleado_AResponse" message="tns:ISWLNVDP_Actualizar_VEmpleado_A_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Eliminar_VEmpleado_E">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNVDP/Eliminar_VEmpleado_E" message="tns:ISWLNVDP_Eliminar_VEmpleado_E_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNVDP/Eliminar_VEmpleado_EResponse" message="tns:ISWLNVDP_Eliminar_VEmpleado_E_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insertar_VVenta_I">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNVDP/Insertar_VVenta_I" message="tns:ISWLNVDP_Insertar_VVenta_I_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNVDP/Insertar_VVenta_IResponse" message="tns:ISWLNVDP_Insertar_VVenta_I_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_VVenta_O_Todo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNVDP/Obtener_VVenta_O_Todo" message="tns:ISWLNVDP_Obtener_VVenta_O_Todo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNVDP/Obtener_VVenta_O_TodoResponse" message="tns:ISWLNVDP_Obtener_VVenta_O_Todo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_VVenta_O_CodigoVenta">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNVDP/Obtener_VVenta_O_CodigoVenta" message="tns:ISWLNVDP_Obtener_VVenta_O_CodigoVenta_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNVDP/Obtener_VVenta_O_CodigoVentaResponse" message="tns:ISWLNVDP_Obtener_VVenta_O_CodigoVenta_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Eliminar_VVenta_E">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNVDP/Eliminar_VVenta_E" message="tns:ISWLNVDP_Eliminar_VVenta_E_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNVDP/Eliminar_VVenta_EResponse" message="tns:ISWLNVDP_Eliminar_VVenta_E_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_VVenta_O_Compleja">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNVDP/Obtener_VVenta_O_Compleja" message="tns:ISWLNVDP_Obtener_VVenta_O_Compleja_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNVDP/Obtener_VVenta_O_ComplejaResponse" message="tns:ISWLNVDP_Obtener_VVenta_O_Compleja_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_VVenta_O_Compleja_CodigoCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNVDP/Obtener_VVenta_O_Compleja_CodigoCliente" message="tns:ISWLNVDP_Obtener_VVenta_O_Compleja_CodigoCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNVDP/Obtener_VVenta_O_Compleja_CodigoClienteResponse" message="tns:ISWLNVDP_Obtener_VVenta_O_Compleja_CodigoCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_VVenta_O_Compleja_CodigoEmpleado">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNVDP/Obtener_VVenta_O_Compleja_CodigoEmpleado" message="tns:ISWLNVDP_Obtener_VVenta_O_Compleja_CodigoEmpleado_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNVDP/Obtener_VVenta_O_Compleja_CodigoEmpleadoResponse" message="tns:ISWLNVDP_Obtener_VVenta_O_Compleja_CodigoEmpleado_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_VVenta_O_Compleja_CodigoProducto">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISWLNVDP/Obtener_VVenta_O_Compleja_CodigoProducto" message="tns:ISWLNVDP_Obtener_VVenta_O_Compleja_CodigoProducto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISWLNVDP/Obtener_VVenta_O_Compleja_CodigoProductoResponse" message="tns:ISWLNVDP_Obtener_VVenta_O_Compleja_CodigoProducto_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ISWLNVDP" type="tns:ISWLNVDP">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Insertar_VProducto_I">
+      <soap:operation soapAction="http://tempuri.org/ISWLNVDP/Insertar_VProducto_I" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_VProducto_O_Todo">
+      <soap:operation soapAction="http://tempuri.org/ISWLNVDP/Obtener_VProducto_O_Todo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_VProducto_O_CodigoProducto">
+      <soap:operation soapAction="http://tempuri.org/ISWLNVDP/Obtener_VProducto_O_CodigoProducto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_VProducto_O_NombreProducto">
+      <soap:operation soapAction="http://tempuri.org/ISWLNVDP/Obtener_VProducto_O_NombreProducto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_VProducto_A">
+      <soap:operation soapAction="http://tempuri.org/ISWLNVDP/Actualizar_VProducto_A" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Eliminar_VProducto_E">
+      <soap:operation soapAction="http://tempuri.org/ISWLNVDP/Eliminar_VProducto_E" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insertar_VCliente_I">
+      <soap:operation soapAction="http://tempuri.org/ISWLNVDP/Insertar_VCliente_I" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_VCliente_O_Todo">
+      <soap:operation soapAction="http://tempuri.org/ISWLNVDP/Obtener_VCliente_O_Todo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_VCliente_O_CodigoCliente">
+      <soap:operation soapAction="http://tempuri.org/ISWLNVDP/Obtener_VCliente_O_CodigoCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_VCliente_O_ApellidoPaternoCliente">
+      <soap:operation soapAction="http://tempuri.org/ISWLNVDP/Obtener_VCliente_O_ApellidoPaternoCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_VCliente_A">
+      <soap:operation soapAction="http://tempuri.org/ISWLNVDP/Actualizar_VCliente_A" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insertar_VEmpleado_I">
+      <soap:operation soapAction="http://tempuri.org/ISWLNVDP/Insertar_VEmpleado_I" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_VEmpleado_O_Todo">
+      <soap:operation soapAction="http://tempuri.org/ISWLNVDP/Obtener_VEmpleado_O_Todo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_VEmpleado_O_CodigoEmpleado">
+      <soap:operation soapAction="http://tempuri.org/ISWLNVDP/Obtener_VEmpleado_O_CodigoEmpleado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_VEmpleado_O_ApellidoPaternoEmpleado">
+      <soap:operation soapAction="http://tempuri.org/ISWLNVDP/Obtener_VEmpleado_O_ApellidoPaternoEmpleado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Actualizar_VEmpleado_A">
+      <soap:operation soapAction="http://tempuri.org/ISWLNVDP/Actualizar_VEmpleado_A" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Eliminar_VEmpleado_E">
+      <soap:operation soapAction="http://tempuri.org/ISWLNVDP/Eliminar_VEmpleado_E" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insertar_VVenta_I">
+      <soap:operation soapAction="http://tempuri.org/ISWLNVDP/Insertar_VVenta_I" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_VVenta_O_Todo">
+      <soap:operation soapAction="http://tempuri.org/ISWLNVDP/Obtener_VVenta_O_Todo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_VVenta_O_CodigoVenta">
+      <soap:operation soapAction="http://tempuri.org/ISWLNVDP/Obtener_VVenta_O_CodigoVenta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Eliminar_VVenta_E">
+      <soap:operation soapAction="http://tempuri.org/ISWLNVDP/Eliminar_VVenta_E" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_VVenta_O_Compleja">
+      <soap:operation soapAction="http://tempuri.org/ISWLNVDP/Obtener_VVenta_O_Compleja" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_VVenta_O_Compleja_CodigoCliente">
+      <soap:operation soapAction="http://tempuri.org/ISWLNVDP/Obtener_VVenta_O_Compleja_CodigoCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_VVenta_O_Compleja_CodigoEmpleado">
+      <soap:operation soapAction="http://tempuri.org/ISWLNVDP/Obtener_VVenta_O_Compleja_CodigoEmpleado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Obtener_VVenta_O_Compleja_CodigoProducto">
+      <soap:operation soapAction="http://tempuri.org/ISWLNVDP/Obtener_VVenta_O_Compleja_CodigoProducto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SWLNVDP">
+    <wsdl:port name="BasicHttpBinding_ISWLNVDP" binding="tns:BasicHttpBinding_ISWLNVDP">
+      <soap:address location="http://localhost:52747/SWLNVDP.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
